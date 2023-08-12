@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, useLocation } from "react-router-dom";
+import HomeScreen from "./pages/home/views/HomeScreen";
+import { useEffect } from "react";
+import RoutesPath from "./constants/Routes";
+import AboutScreen from "./pages/about/views/AboutScreen";
+import FaqScreen from "./pages/faq/views/FaqScreen";
 
-function App() {
+const App = () => {
+  const location = useLocation();
+
+  const scrollToHash = (hash: string) => {
+    const blogElement = document.getElementById(
+      hash.split("").slice(1).join("")
+    );
+    if (blogElement) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: blogElement.offsetTop,
+      });
+    }
+  };
+  useEffect(() => {
+    scrollToHash(location.hash);
+  }, [location.hash]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route index element={<HomeScreen />} />
+      <Route path={RoutesPath.about} element={<AboutScreen />} />
+      <Route path={RoutesPath.faq} element={<FaqScreen />} />
+    </Routes>
   );
-}
+};
 
 export default App;
