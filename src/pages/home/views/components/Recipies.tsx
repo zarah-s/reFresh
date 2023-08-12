@@ -4,7 +4,11 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Assets from "../../../../assets";
 import { useNavigate } from "react-router-dom";
 import RoutesPath from "../../../../constants/Routes";
-const Recipies = () => {
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+const Recipies = ({ subtitle, title }: Props) => {
   const splideRef = useRef<Splide | null>(null); // Add TypeScript type annotation
   const navigate = useNavigate();
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
@@ -39,10 +43,12 @@ const Recipies = () => {
   }, []);
   return (
     <div id="recipies" className="md:m-20 sm:my-20 xs:my-20">
-      <h1 className="text-2xl text-primary text-center font-semibold">
-        Recipies
+      <h1 className="text-3xl text-primary text-center font-semibold">
+        {title ?? "Recipies"}
       </h1>
-      <p className="text-center">Get the latest news about our products</p>
+      <p className="text-center">
+        {subtitle ?? "Get the latest news about our products"}
+      </p>
       <div className="my-10"></div>
       <Splide
         ref={splideRef}

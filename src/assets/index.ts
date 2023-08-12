@@ -11,6 +11,9 @@ import { ReactComponent as EmailIcon } from "./icons/ic_baseline-email.svg";
 import { ReactComponent as PhoneIcon } from "./icons/iconamoon_phone-fill.svg";
 import { ReactComponent as LocationIcon } from "./icons/Vector.svg";
 import { ReactComponent as PlusIcon } from "./icons/typcn_plus.svg";
+import { ReactComponent as ColoredEmailIcon } from "./icons/material-symbols_mail.svg";
+import { ReactComponent as FaceBookIcon } from "./icons/ic_round-facebook.svg";
+import { ReactComponent as TwitterIcon } from "./icons/bi_twitter.svg";
 import FAQBg from "./images/faq/FAQBg.png";
 import Brand1 from "./images/brands/brand_1.jpg";
 import Carousel_1 from "./images/about/carousel/1.jpg";
@@ -20,6 +23,7 @@ import Carousel_4 from "./images/about/carousel/4.jpg";
 import Carousel_5 from "./images/about/carousel/5.jpg";
 import Carousel_6 from "./images/about/carousel/6.jpg";
 import OurStory from "./images/about/our_story.png";
+import RecipeVideoThumbnail from "./images/recipies/vid_thumbnail.png";
 
 const Assets = {
     LogoWhite,
@@ -44,6 +48,10 @@ const Assets = {
     Carousel_6,
     PlusIcon,
     FAQBg,
+    ColoredEmailIcon,
+    FaceBookIcon,
+    TwitterIcon,
+    RecipeVideoThumbnail
 };
 
 export default Assets;

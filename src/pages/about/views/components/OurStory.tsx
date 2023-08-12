@@ -27,8 +27,8 @@ const OurStory = () => {
           </div>
         ) : null}
         <div className="xl:px-0 lg:px-0 md:px-0 sm:px-3 xs:px-3 space-y-4">
-          <h1 className="text-[#398796] font-[400] text-4xl">Our Story</h1>
-          <p className="text-[#398796]">
+          <h1 className="text-primary font-[400] text-4xl">Our Story</h1>
+          <p className="text-primary">
             Susan was the first holstein cow brought from Fries-land to the farm
             for dairy processes, where she adapted quickly in Vom, Plateau
             state. She produced alot of Milk and remains the mother of all our

@@ -78,21 +78,21 @@ const NavBar = ({ activeTab }: { activeTab: string }) => {
           </li>
           <li
             className={`${
-              activeTab === "Recipies" ? " font-[700]" : " font-light"
+              activeTab === "Contact" ? " font-[700]" : " font-light"
             } text-primary`}
           >
             <Link to="/#contact">Contact</Link>
           </li>
           <li
             className={`${
-              activeTab === "Recipies" ? " font-[700]" : " font-light"
+              activeTab === "Distributor" ? " font-[700]" : " font-light"
             } text-primary`}
           >
             Distributor
           </li>
           <li
             className={`${
-              activeTab === "Recipies" ? " font-[700]" : " font-light"
+              activeTab === "About" ? " font-[700]" : " font-light"
             } text-primary`}
           >
             <Link to={RoutesPath.about}>About reFresh</Link>

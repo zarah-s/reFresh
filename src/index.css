@@ -119,3 +119,32 @@
   background-size: 100% 100%;
   background-repeat: contain;
 }
+
+
+.faq-bg {
+  background-image: url(./assets/images/faq/FAQBg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+ol.custom-style {
+  list-style-type: none;
+  /* Hide default numbering */
+}
+
+ol.custom-style li {
+  position: relative;
+  counter-increment: my-counter;
+}
+
+ol.custom-style li::before {
+  content: counter(my-counter) ;
+  /* Display the current item number with a period */
+  color: #398796;
+  font-size: 1.6rem;
+  /* Change the color of the numbers */
+  font-weight: bold;
+  /* Apply bold font to the numbers */
+  margin-right: 1.5rem;
+  /* Add spacing between number and content */
+}

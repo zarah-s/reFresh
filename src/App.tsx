@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import RoutesPath from "./constants/Routes";
 import AboutScreen from "./pages/about/views/AboutScreen";
 import FaqScreen from "./pages/faq/views/FaqScreen";
+import RecipiesScreen from "./pages/recipies/views/RecipiesScreen";
 
 const App = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const App = () => {
       <Route index element={<HomeScreen />} />
       <Route path={RoutesPath.about} element={<AboutScreen />} />
       <Route path={RoutesPath.faq} element={<FaqScreen />} />
+      <Route path={RoutesPath.recipies} element={<RecipiesScreen />} />
     </Routes>
   );
 };
