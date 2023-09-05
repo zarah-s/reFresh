@@ -4,8 +4,11 @@ import Brands from "./components/Brands";
 import Recipies from "./components/Recipies";
 import About from "./components/About";
 import Footer from "../../../common/components/footer/Footer";
-
-const HomeScreen = () => {
+import { Recipe } from "../../../App";
+interface Props {
+  recipes: Recipe[];
+}
+const HomeScreen = ({ recipes }: Props) => {
   return (
     <div className="">
       <NavBar activeTab="Home" />
@@ -21,7 +24,7 @@ const HomeScreen = () => {
           alt=""
         />
       </div>
-      <Recipies />
+      <Recipies recipes={recipes} />
       <About />
       <Footer />
     </div>

@@ -1,27 +1,26 @@
+import { Recipe } from "../../../../App";
 import Ingredients from "./Ingredients";
 import Steps from "./Steps";
-
-const StepsAndIngredients = () => {
+interface Props {
+  recipe: Recipe | null;
+}
+const StepsAndIngredients = ({ recipe }: Props) => {
   return (
     <div className="md:mx-20 mx-5">
       <div className="flex gap-20 md:flex-nowrap flex-wrap items-center justify-between">
-        <div className="">
+        <div className="w-full">
           <h1 className="text-3xl font-[400] text-primary">Ingredients</h1>
           <h1 className="text-4xl font-[500] text-[#398796]">
-            Goat Cheese Pasta salad
+            {recipe?.title}
           </h1>
-          <small className="text-[#1F1F1F]">
-            Do you have a few questions? Below are some of our frequently asked
-            questions.If you are still unsure if Farmfresh is right for you can
-            contact us here
-          </small>
-          <Ingredients />
+          <small className="text-[#1F1F1F]">{recipe?.description}</small>
+          <Ingredients ingredients={recipe?.ingredients ?? []} />
         </div>
 
-        <div className="">
+        <div className="w-full">
           <h1 className="text-3xl font-[400] text-primary">How to make it</h1>
 
-          <Steps />
+          <Steps steps={recipe?.steps ?? ""} />
         </div>
       </div>
     </div>

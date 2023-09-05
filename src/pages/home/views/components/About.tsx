@@ -51,34 +51,10 @@ const About = () => {
               }}
               className="bg-primary xl:w-1/2 lg:w-1/2 md:w-1/2 sm:w-full xs:w-full p-3 text-white rounded-lg "
             >
-              Click Me
+              Read More
             </button>
           </div>
         </div>
-        {/* <div className="w-[calc(100%-20px)]">
-          <h1 className="text-3xl font-semibold text-primary text-center">
-            About
-          </h1>
-          <p className="text-sm my-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
-            qui cum harum accusantium omnis exercitationem tenetur iste ipsam
-            nulla, earum, assumenda corrupti dolor doloremque minus odit animi
-            possimus. Dolorum, nemo. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Aliquam, animi? Illum vel, quas distinctio, animi
-            unde ipsum temporibus nihil et ipsam, autem nobis dolorum! Accusamus
-            nam facere modi at rem?
-          </p>
-          <div className="flex justify-center">
-            <button
-              onClick={() => {
-                navigate(RoutesPath.about);
-              }}
-              className="bg-primary w-1/2 p-3 text-white rounded-lg "
-            >
-              Click Me
-            </button>
-          </div>
-        </div> */}
       </div>
     </div>
   );

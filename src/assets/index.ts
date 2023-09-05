@@ -14,6 +14,7 @@ import { ReactComponent as PlusIcon } from "./icons/typcn_plus.svg";
 import { ReactComponent as ColoredEmailIcon } from "./icons/material-symbols_mail.svg";
 import { ReactComponent as FaceBookIcon } from "./icons/ic_round-facebook.svg";
 import { ReactComponent as TwitterIcon } from "./icons/bi_twitter.svg";
+import { ReactComponent as Dropdown } from "./icons/dropdown.svg";
 import FAQBg from "./images/faq/FAQBg.png";
 import Brand1 from "./images/brands/brand_1.jpg";
 import Carousel_1 from "./images/about/carousel/1.jpg";
@@ -51,7 +52,8 @@ const Assets = {
     ColoredEmailIcon,
     FaceBookIcon,
     TwitterIcon,
-    RecipeVideoThumbnail
+    RecipeVideoThumbnail,
+    Dropdown
 };
 
 export default Assets;

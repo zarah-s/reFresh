@@ -3,15 +3,34 @@ import Footer from "../../../common/components/footer/Footer";
 import Intro from "./components/Intro";
 import StepsAndIngredients from "./components/StepsAndIngredients";
 import Recipies from "../../home/views/components/Recipies";
-
-const RecipiesScreen = () => {
+import { Recipe } from "../../../App";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+interface Props {
+  recipes: Recipe[];
+}
+const RecipiesScreen = ({ recipes }: Props) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [recipe, setRecipe] = useState<Recipe | null>(null);
+  useEffect(() => {
+    const state = location.state;
+    if (!state) {
+      navigate(-1);
+    } else {
+      setRecipe(state);
+    }
+  }, []);
   return (
     <div>
-      <NavBar activeTab="Recipies" />
-      <Intro />
+      <div className="w-screen">
+        <NavBar activeTab="Recipies" />
+      </div>
 
-      <StepsAndIngredients />
-      <Recipies title="Keep on cooking" />
+      <Intro recipe={recipe} />
+
+      <StepsAndIngredients recipe={recipe} />
+      <Recipies recipes={recipes} title="Keep on cooking" />
       <Footer />
     </div>
   );
