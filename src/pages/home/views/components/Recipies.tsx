@@ -70,7 +70,7 @@ const Recipies = ({ subtitle, title, recipes }: Props) => {
               <div className="recipe-card">
                 <img
                   src={item.imageUrl}
-                  className="rounded-xl w-full h-64 object-cover"
+                  className="rounded-xl w-full xxl:h-96 h-64 object-cover"
                   alt=""
                 />
                 <div className="recipe-content bg-primary">

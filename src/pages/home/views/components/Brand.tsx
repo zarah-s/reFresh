@@ -30,7 +30,7 @@ const Brand = ({ brand, delay }: Props) => {
       initial="initial"
       animate="animate"
       variants={backgroundVariants}
-      className={`card h-[390px] flex items-center justify-center overflow-hidden ${
+      className={`card xxl:h-[60vh] h-[390px] flex items-center justify-center overflow-hidden ${
         brand.colorHex === "#DCCEAC"
           ? "bg-[#DCCEAC]"
           : brand.colorHex === "#F8F8F8"
