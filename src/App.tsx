@@ -43,7 +43,7 @@ const App = () => {
   const fetchRecipies = async () => {
     try {
       const response = await axios.get(
-        "https://farmfresh-api.vercel.app/api/recipes/category?category=farmfresh"
+        "https://farmfresh-api.vercel.app/api/recipes/category?category=refresh"
       );
       console.log(response.data.data);
       setRecipies(response.data.data);

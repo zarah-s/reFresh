@@ -5,6 +5,7 @@ import {
 } from "react-share";
 import { Recipe } from "../../../../App";
 import Assets from "../../../../assets";
+import ReactPlayer from "react-player";
 interface Props {
   recipe: Recipe | null;
 }
@@ -37,7 +38,7 @@ const Intro = ({ recipe }: Props) => {
             </div>
           </div>
         </div>
-        <img src={Assets.RecipeVideoThumbnail} alt="" />
+        <ReactPlayer url={recipe?.videoUrl ?? ""} />
       </div>
     </div>
   );
