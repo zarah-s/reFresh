@@ -1,6 +1,6 @@
 import LogoWhite from "./images/logo_white.png";
 import Logo from "./images/logo.png";
-import Grid from "./images/grid.png";
+import Grid from "./images/grid.jpg";
 import HomeBG from "./images/homeBg.png";
 import Strawberry from "./images/brands/strawberry.png";
 import FullCream from "./images/brands/full_cream.png";
