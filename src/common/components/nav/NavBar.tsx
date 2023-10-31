@@ -64,7 +64,9 @@ const NavBar = ({ activeTab }: { activeTab: string }) => {
               activeTab === "Shop" ? " font-[700]" : " font-light"
             } text-primary`}
           >
-            <Link to="#">Shop</Link>
+            <a href="https://farmfreshng.com/" target="_blank">
+              Shop
+            </a>
           </li>
           <li
             className={`${
@@ -83,12 +85,19 @@ const NavBar = ({ activeTab }: { activeTab: string }) => {
           >
             <Link to="/#contact">Contact</Link>
           </li>
+
           <li
             className={`${
               activeTab === "Distributor" ? " font-[700]" : " font-light"
             } text-primary`}
           >
-            Distributor
+            <a
+              href="https://idl-vercel-pipe.vercel.app/"
+              target="_blank"
+              aria-current="page"
+            >
+              Distributor
+            </a>
           </li>
           <li
             className={`${

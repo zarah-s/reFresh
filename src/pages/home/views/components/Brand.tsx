@@ -26,7 +26,9 @@ const Brand = ({ brand, delay }: Props) => {
     },
   };
   return (
-    <motion.div
+    <motion.a
+      href="https://farmfreshng.com/"
+      target="_blank"
       initial="initial"
       animate="animate"
       variants={backgroundVariants}
@@ -54,7 +56,7 @@ const Brand = ({ brand, delay }: Props) => {
         </p>
         <button className="btn">Read More...</button>
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 
