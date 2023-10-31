@@ -27,7 +27,7 @@ const Brand = ({ brand, delay }: Props) => {
   };
   return (
     <motion.a
-      href="https://farmfreshng.com/"
+      href="https://refreshng.com/shop/"
       target="_blank"
       initial="initial"
       animate="animate"

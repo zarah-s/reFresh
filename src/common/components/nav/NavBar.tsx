@@ -64,7 +64,7 @@ const NavBar = ({ activeTab }: { activeTab: string }) => {
               activeTab === "Shop" ? " font-[700]" : " font-light"
             } text-primary`}
           >
-            <a href="https://farmfreshng.com/" target="_blank">
+            <a href="https://refreshng.com/shop/" target="_blank">
               Shop
             </a>
           </li>
