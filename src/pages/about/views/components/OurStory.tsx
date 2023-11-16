@@ -29,14 +29,12 @@ const OurStory = () => {
         <div className="xl:px-0 lg:px-0 md:px-0 sm:px-3 xs:px-3 space-y-4">
           <h1 className="text-primary font-[400] text-4xl">Our Story</h1>
           <p className="text-primary">
-            Susan was the first holstein cow brought from Fries-land to the farm
-            for dairy processes, where she adapted quickly in Vom, Plateau
-            state. She produced alot of Milk and remains the mother of all our
-            cows. This Milk was produced into tasty nutritional dairy product,
-            know as Farmfresh which started in 2003. First pack change happened
-            in 2009 - 2010 from the square bottles to the round bottles for the
-            drinking yoghurt. The new packaging was launched in 2016, and few
-            new flavors were added as well.
+            reFresh was introduced in 2020 post covid era. The brand was
+            introduced to increase the company's market share to make up for the
+            niche of consumers that aren't able to afford Farmfresh. The reFresh
+            initiative was based on consumers that wants quality yoghurt but
+            cannot afford to spend so much on it. Affordable refreshing quality
+            was the basis reFresh brand was birthed.
           </p>
         </div>
       </div>

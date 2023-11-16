@@ -5,6 +5,7 @@ interface Props {
     title: string;
     image: any;
     colorHex: string;
+    content: string;
   };
   delay: number;
 }
@@ -50,11 +51,8 @@ const Brand = ({ brand, delay }: Props) => {
       />
       <div className="info space-y-3">
         <h1 className="text-2xl">{brand.title}</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
-          cum!
-        </p>
-        <button className="btn">Read More...</button>
+        <p className="text-sm">{brand.content}</p>
+        <button className="btn">Shop now...</button>
       </div>
     </motion.a>
   );
