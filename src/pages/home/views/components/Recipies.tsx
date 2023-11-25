@@ -60,7 +60,7 @@ const Recipies = ({ subtitle, title, recipes }: Props) => {
           focus: "center",
           perPage: screenWidth >= 576 ? 5 : 2,
           pagination: false,
-          gap: "20px",
+          gap: "10px",
         }}
         aria-label=""
       >
